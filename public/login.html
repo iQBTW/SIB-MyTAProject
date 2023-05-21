@@ -10,56 +10,59 @@
 </head>
 
 <body>
-    <div class="font-Poppins flex flex-row justify-center items-center h-screen m-auto">
+    <form action="">
+        <div class="font-Poppins flex flex-row justify-center items-center h-screen m-auto">
+            <!-- Col1 -->
+            <div class=" bg-purple-600 shadow-md md:shrink-0 text-center">
+                <img class="max-w-[467px]" src="./../src/img/logo.png" alt="Logo" srcset="">
+            </div>
 
-        <!-- Col1 -->
-        <div class=" bg-purple-600 shadow-md md:shrink-0 text-center">
-            <img class="max-w-[467px]" src="/src/img/logo.png" alt="" srcset="">
+            <!-- Col2 -->
+            <div class=" bg-gray-150 text-center shadow-md te">
+                <h3 class="text-black text-lg pt-10 mt-0">Login to your account</h3>
+
+                <!-- Email form -->
+                <div class="mt-5 px-[7rem] flex items-center justify-center">
+                    <svg class="h-6 w-6 text-black absolute -translate-x-[6.9rem] pointer-events-none" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <input
+                        class="w-[250px] h-[30px] pl-[1.8rem] text-sm rounded-lg border-0 focus:ring-1 ring-purple-500 focus:outline-none transition-all duration-250 ease-linear"
+                        type="text" name="username" id="userName" placeholder="youremail@email.com">
+                </div>
+
+                <!-- Password form -->
+                <div class="mt-7 mb-4 pb-3 flex justify-center items-center">
+                    <svg class="h-6 w-6 text-black absolute -translate-x-[6.9rem] pointer-events-none" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
+                    </svg>
+
+                    <input
+                        class="w-[250px] h-[30px] pl-[1.8rem] text-sm rounded-lg border-0 focus:ring-1 ring-purple-500 focus:outline-none transition-all duration-250 ease-linear"
+                        type="password" name="password" id="passWord" placeholder="Password">
+
+                </div>
+
+                <!-- login btn -->
+                <div class="flex justify-center">
+                    <button type="submit"
+                        class="rounded-sm shadow text-lg bg-purple-500 m-3 px-6 py-1 hover:text-white hover:rounded-md hover:bg-purple-950 hover:ring-1 ring-blue-500 transition-all duration-200 ease-linear">Login</button>
+                </div>
+                <!-- register btn -->
+                <div class="pb-[1.22rem]">
+                    <a href="register.html"
+                        class="text-[12px] hover:text-blue-200 hover:underline transition-all duration-200 ease-linear">Doesn't
+                        have
+                        an account?
+                        Register here!</a>
+                </div>
+            </div>
         </div>
-
-        <!-- Col2 -->
-        <div class=" bg-gray-100 text-center shadow-md">
-            <!-- <div class=""> -->
-            <h3 class="text-black text-lg pt-10">Login</h3>
-            <!-- </div> -->
-            <!-- Email form -->
-            <div class="mt-5 px-[7rem] flex items-center justify-center">
-                <svg class="h-6 w-6 text-black absolute -translate-x-[6.9rem] pointer-events-none" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <input
-                    class="w-[250px] h-[30px] pl-[1.8rem] text-sm rounded-lg border-0 focus:ring-1 ring-purple-500 focus:outline-none transition-all duration-250 ease-linear"
-                    type="text" name="username" id="userName" placeholder="example@email.com">
-            </div>
-
-            <!-- Password form -->
-            <div class="mt-7 mb-4 pb-10 flex justify-center items-center">
-                <svg class="h-6 w-6 text-black absolute -translate-x-[6.9rem] pointer-events-none" fill="none"
-                    viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                        d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
-                </svg>
-
-                <input
-                    class="w-[250px] h-[30px] pl-[1.8rem] text-sm rounded-lg border-0 focus:ring-1 ring-purple-500 focus:outline-none transition-all duration-250 ease-linear"
-                    type="password" name="password" id="passWord" placeholder="Password">
-
-            </div>
-            <div class="block">
-                <a href="#"
-                    class="text-[12px] hover:text-blue-200 transition-all duration-200 ease-linear underline">Doesn't
-                    have
-                    an account?
-                    Register here!</a>
-            </div>
-            <div class="flex justify-end">
-                <button type="submit"
-                    class="rounded-sm shadow text-lg bg-purple-500 m-3 px-5 hover:text-white hover:rounded-md hover:bg-purple-950 hover:ring-1 ring-blue-500 transition-all duration-200 ease-linear">Login</button>
-            </div>
-        </div>
-    </div>
+    </form>
 </body>
 
 </html>
